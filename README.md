@@ -2,6 +2,31 @@
 
 A comprehensive real-time monitoring and auditing dashboard for SQL Server environments built with .NET 8 Web API backend and React frontend.
 
+![Dashboard Status](https://img.shields.io/badge/Status-Active-brightgreen) ![React](https://img.shields.io/badge/React-18.2.0-blue) ![TypeScript](https://img.shields.io/badge/TypeScript-4.9.5-blue) ![Material--UI](https://img.shields.io/badge/Material--UI-5.x-blue) ![.NET](https://img.shields.io/badge/.NET-Core-purple)
+
+[![GitHub stars](https://img.shields.io/github/stars/kumarsparkz/sql-server-audit-dashboard-web)](https://github.com/kumarsparkz/sql-server-audit-dashboard-web/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/kumarsparkz/sql-server-audit-dashboard-web)](https://github.com/kumarsparkz/sql-server-audit-dashboard-web/network)
+[![GitHub issues](https://img.shields.io/github/issues/kumarsparkz/sql-server-audit-dashboard-web)](https://github.com/kumarsparkz/sql-server-audit-dashboard-web/issues)
+[![GitHub license](https://img.shields.io/github/license/kumarsparkz/sql-server-audit-dashboard-web)](https://github.com/kumarsparkz/sql-server-audit-dashboard-web/blob/main/LICENSE)
+
+## 🔗 Related Repositories
+
+This is the **backend api application**. For the complete solution, you'll also need:
+
+- 🔧 **[Frontend web](https://github.com/kumarsparkz/sql-server-audit-dashboard-web)** - A modern, real-time SQL Server monitoring and audit dashboard built with React
+- 📚 **[Documentation](https://github.com/kumarsparkz/sql-server-audit-dashboard-web/blob/main/README.md)** - API documentation and deployment guides
+
+### 🏗️ **Architecture Overview**
+```
+┌─────────────────────┐    HTTP/HTTPS     ┌──────────────────────┐
+│   React Frontend    │ ◄─────────────── │    .NET Core API     │
+│  (This Repository)  │                   │   (Backend Repo)     │
+└─────────────────────┘                   └──────────────────────┘
+         │                                           │
+         │ Real-time Updates                         │
+         └────────── SignalR ─────────────────────────┘
+```
+
 ## 🚀 Features
 
 - **Real-time Server Monitoring** - Live performance metrics (CPU, Memory, Disk usage)
@@ -22,7 +47,7 @@ A comprehensive real-time monitoring and auditing dashboard for SQL Server envir
 - **RESTful APIs** - Comprehensive endpoint coverage
 
 ### Frontend (React)
-- **Material-UI** - Modern responsive design
+- **Material-UI** - Modern responsive design ([Repository](https://github.com/kumarsparkz/sql-server-audit-dashboard-web))
 - **Real-time Updates** - SignalR client integration
 - **Interactive Charts** - Performance visualization
 - **Responsive Layout** - Mobile-friendly interface
