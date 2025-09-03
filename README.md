@@ -61,34 +61,37 @@ This is the **backend api application**. For the complete solution, you'll also 
 
 ## 🛠️ Installation & Setup
 
-### 1. Clone the Repository
+### 1. Clone the Repositories
 ```bash
-git clone <repository-url>
-cd SQL_Server_Audit_Dashboard
+# Clone the frontend (this repository)
+git clone https://github.com/kumarsparkz/sql-server-audit-dashboard-api.git
+cd sql-server-audit-dashboard-api
+
+# Clone the frontend web (separate repository)
+git clone https://github.com/kumarsparkz/sql-server-audit-dashboard-web.git
 ```
 
 ### 2. Backend Setup (API)
 ```bash
-cd Audit_api/Audit_api
+# Navigate to the backend directory
+cd ../sql-server-audit-dashboard-api
 
 # Restore NuGet packages
 dotnet restore
 
-# Update database connection string in appsettings.json
-# Default: Server=(localdb)\mssqllocaldb;Database=AuditDashboard;Trusted_Connection=true;
+# Update connection strings in appsettings.json
+# Configure CORS for frontend URL (http://localhost:3000)
 
-# Apply database migrations
-dotnet ef database update
-
-# Run the API
+# Run the backend API
 dotnet run
 ```
 
-The API will be available at: `https://localhost:7001`
+The backend API will start at `https://localhost:7001` (or the port shown in the console).
 
-### 3. Frontend Setup (React)
+### 3. Frontend Setup (Web)
 ```bash
-cd audit-dashboard-frontend
+# Navigate back to the frontend directory
+cd ../sql-server-audit-dashboard-web
 
 # Install dependencies
 npm install
